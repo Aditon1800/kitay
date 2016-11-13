@@ -125,7 +125,6 @@ a {
 .header-slider {
   float: left;
   width: 55%;
-
 }
 
 .slide:nth-child(2),
@@ -137,6 +136,65 @@ a {
 .google-map img {
   width: 100%;
   height: auto;
+}
+
+/*// mobile style for header */
+.mobile-menu-btn {
+  position: fixed;
+  top: 16px;
+  right: 4%;
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: url('../img/humb_head.png') no-repeat center;
+  z-index: 999;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 45px;
+  background-color: #eee;
+  z-index: 9999;
+  text-align: center;
+}
+
+.mobile-nav .btn-close {
+  position: absolute;
+  top: 16px;
+  right: 4%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url('../img/cclose-mb.png') no-repeat center;
+}
+
+.mobile-nav_list {
+  margin-bottom: 60px;
+}
+
+.mobile-nav_item {
+  margin-bottom: 20px;
+  color: #3d3d3d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.mobile-nav .whatsapp {
+  color: #3d3d3d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.mobile-nav .whatsapp span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 65px;
 }
 
 /*WHY US*/
