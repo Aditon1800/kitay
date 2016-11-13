@@ -75,15 +75,17 @@
 
   #why-us .why-us-list {
     display: none;
+    padding-bottom: 10px;
+  }
+
+  #why-us .why-us-list .why-us-item {
+    font-size: 13px;
+    list-style-type: none;
   }
 
   .why-us-title {
     padding-top: 62px;
     font-size: 20px;
-  }
-
-  .why-us-title .icon-title {
-    display: inline;
   }
 
   .cont-desc-title,
@@ -97,6 +99,12 @@
   .slide-university .text{
     font-size: 12px;
     line-height: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  #why-us .why-us-list {
+    display: block !important;
   }
 }
 
@@ -114,6 +122,10 @@
   .why-us-title {
     padding-top: 45px;
     font-size: 14px;
+  }
+
+  .why-us-title .icon-title {
+    display: inline-block;
   }
 }
 

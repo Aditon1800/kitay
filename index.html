@@ -71,7 +71,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="why-us-block1">
-              <h3 class="why-us-title">Качественное образование <i class="icon-title">Icon</i></h3>
+              <h3 class="why-us-title">Качественное образование <i class="icon-title icon-title icon-title_plus"></i></h3>
 
               <ul class="why-us-list">
                 <li class="why-us-item">Вузы элитной лиги C9</li>
@@ -84,7 +84,7 @@
 
          <div class="col-sm-6">
             <div class="why-us-block2">
-              <h3 class="why-us-title">Трудоустройство <i class="icon-title">Icon</i></h3>
+              <h3 class="why-us-title">Трудоустройство <i class="icon-title icon-title icon-title_plus"></i></h3>
 
              <ul class="why-us-list">
               <li class="why-us-item">Анализируем востребованные специальности</li>
@@ -99,7 +99,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="why-us-block3">
-              <h3 class="why-us-title">Доступность <i class="icon-title">Icon</i></h3>
+              <h3 class="why-us-title">Доступность <i class="icon-title icon-title icon-title_plus"></i></h3>
 
               <ul class="why-us-list">
                 <li class="why-us-item">Бесплатная подача документов</li>
@@ -112,7 +112,7 @@
 
          <div class="col-sm-6">
             <div class="why-us-block4">
-              <h3 class="why-us-title">Новые впечатления <i class="icon-title">Icon</i></h3>
+              <h3 class="why-us-title">Новые впечатления <i class="icon-title icon-title icon-title_plus"></i></h3>
 
               <ul class="why-us-list">
                 <li class="why-us-item">Объединяем в клуб иностранных студентов CCN</li>
@@ -179,7 +179,8 @@
                 <div class="inner-wrap-desc">
                   <p class="text">Открыт в 1960 году. Занимает первое место в Китае по метеорологии и атмосферным исследованиям.<br><br>
                   Факультеты: английского языка, западных языков, восточных языков.</p>
-                  <button class="btn btn-custom btn-sl">Читать подробнее</button>
+
+                  <button class="btn btn-custom btn-sl " data-toggle="modal" data-target="#universModal">Читать подробнее</button>
                 </div>
               </div>
               <!-- item slide -->
@@ -794,6 +795,25 @@
             </div>
           </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="universModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
@@ -873,12 +893,12 @@
     <script>
       jQuery(document).ready(function() {
 
-
         if ($('.faq-list__question')) {
           
           var $quest = $('.faq-list__question');
           var $easy = $('.faq-list__answer');
-          $quest.each(function() {      
+
+          $quest.each(function() {
             $(this).on('click', function() {
               
               var $answer = $(this).next($easy);
@@ -894,6 +914,33 @@
             });
           });
         };
+
+        if ($('.why-us-title')) {
+
+          var $whyTitle = $('.why-us-title');
+          
+          var $whyList = $('.why-us-list');
+
+          $whyTitle.each(function() {
+            $(this).on('click', function() {
+              
+              var $whyListNext = $(this).next($whyList);
+              var $questIcon = $(this).children('.icon-title');
+
+              if ($whyListNext.is(':hidden')) {
+                  $whyListNext.slideDown();
+                  $questIcon.removeClass('icon-title_plus').addClass('icon-title_minus');
+
+              } else { 
+                $whyListNext.slideUp();
+                $questIcon.removeClass('icon-title_minus').addClass('icon-title_plus');
+              }
+            
+               return false;
+            });
+          });
+        }
+        
       });
     </script>
   </body>
