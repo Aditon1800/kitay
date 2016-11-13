@@ -34,12 +34,12 @@ a {
   font-weight: 400;
   line-height: 30px;
   color: #fff;
-  padding: 5px 15px;
+  padding: 14px 40px;
 }
 
 .btn-sl {
   font-size: 16px;
-  padding: 10px 45px;
+  padding: 8px 35px;
 }
 
 .btn-custom:hover {
@@ -1184,4 +1184,67 @@ input[type="phone"],
   width: 31px;
   height: 37px;
   background: url('/img/social/youtube-icon.png') 0 0 no-repeat;
+}
+
+
+#mob-social {
+  display: none;
+
+}
+
+.mob-title{
+  padding-top: 45px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+.m-social {
+  width: 204px;
+  margin: 30px auto 0;
+  padding-bottom: 50px;
+}
+
+.m-social:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.m-social a {
+  display: inline-block;
+  margin: 0 .7em;
+}
+
+@media (max-width: 768px) {
+  #schemes,
+  #benefit-after,
+  /*#conditions,*/
+  #feedback,
+  #popular-questions,
+  #footer,
+  .condition-item {
+    display: none;
+  }
+
+  #mob-cocial {
+    display: block;
+  }
+
+  .sec-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .cont-desc-title,
+  .cont-desc-title:nth-child(2),
+  .cont-desc-title:nth-child(3) {
+    text-align: center;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
 }
