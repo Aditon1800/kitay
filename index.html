@@ -431,7 +431,11 @@
                   </div>
                   <div class="col-md-6">
                     <div class="condition-img">
-                      <img src="img/cond-ph1.jpg" alt="">
+                      <div class="slider slider-foto-one">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
                       <div class="prev-btn">
                         <span class="click-prev"></span>
                         <span class="click-zoom"></span>
@@ -445,6 +449,20 @@
               <article class="cond-block">
                 <div class="row">
                   <div class="col-md-6 col-md-push-6">
+                    <div class="condition-img">
+                      <div class="slider slider-foto-two">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
+                      <div class="prev-btn">
+                        <span class="click-prev"></span>
+                        <span class="click-zoom"></span>
+                        <span class="click-next"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-md-pull-6">
                     <p class="cont-desc-title">Творческие кружки и секции.</p>
                     <ul>
                       <li class="condition-item">
@@ -501,14 +519,17 @@
                   </div>
                   <div class="col-md-6">
                     <div class="condition-img">
-                      <img src="img/cond-ph3.jpg" alt="">
+                      <div class="slider slider-foto-three">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
                       <div class="prev-btn">
                         <span class="click-prev"></span>
                         <span class="click-zoom"></span>
                         <span class="click-next"></span>
                       </div>
                     </div>
-                  </div>
                 </div>
               </article>
 
@@ -831,6 +852,24 @@
       });
 
     </script>
+    
+    <script>
+      $('.slider-foto-one').slick({
+        prevArrow: $('.slider-foto-one + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-one + .prev-btn > .click-next')
+      });
+
+      $('.slider-foto-two').slick({
+        prevArrow: $('.slider-foto-two + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-two + .prev-btn > .click-next')
+      });
+
+      $('.slider-foto-three').slick({
+        prevArrow: $('.slider-foto-three + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-three + .prev-btn > .click-next')
+      });
+    </script>
+
     <script>
       jQuery(document).ready(function() {
 
