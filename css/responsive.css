@@ -125,13 +125,13 @@
   }
 
   .slide-university .inner-wrap-desc {
-    padding: 10px;
+    /*padding: 10px;*/
   }
 
   .slide-university .text{
     font-size: 12px;
     line-height: 14px;
-    padding-right: 15px;
+    /*padding-right: 15px;*/
   }
 
   .enrollment-wrap {
@@ -142,7 +142,6 @@
   #enrollment .desc span {
     padding-bottom: 30px;
   }
-
 }
 
 @media screen and (max-width: 550px) {
