@@ -35,15 +35,18 @@
               Объединение ведущих<br>
               вузов Китая
             </p>
+
             <p class="ph-number">8 (800) 500 89 38
             <span><br>Бесплатно по РФ<br>
                 <b>10:30 - 19:30</b></span>
             </p>
+            <a class="mobile-menu-btn" href="#`"></a>
+
           </div>
           <div class="header-desc">
             <h1 class="header-title sec-title">
-            Высшее образование
-            в Китае с последующим
+            Высшее образование<br>
+            в Китае с последующим<br>
             трудоустройством
             </h1>
             <p class="header-p">
@@ -63,6 +66,32 @@
           <div class="slide"><img src="img/slide-photo.jpg" alt="slide-photo3" class="slide-bg"></div>
         </div>
       </div>
+
+      <div class="mobile-nav">
+
+        <a class="btn-close" href="#`"></a>
+
+        <ul class="mobile-nav_list">
+          <li class="mobile-nav_item">
+            <a href="#`">Доступные вузы</a></li>
+          <li class="mobile-nav_item">
+            <a href="#`">Условия проживания</a></li>
+          <li class="mobile-nav_item">
+            <a href="#`">Ответы на популярные вопросы</a></li>
+        </ul>
+
+        <div class="whatsapp">
+          Задайте вопрос в ВотсАп: <i class="icon-wp"></i><br>
+          
+          <span>или</span>
+        </div>
+
+        <button class="btn btn-custom">Закажите звонок</button>
+      </div>
+
+
+
+
     </header>
 
 <!-- WHY US -->
@@ -906,22 +935,21 @@
       jQuery(document).ready(function() {
 
         if ($('.faq-list__question')) {
-          
+
           var $quest = $('.faq-list__question');
           var $easy = $('.faq-list__answer');
 
           $quest.each(function() {
             $(this).on('click', function() {
-              
+
               var $answer = $(this).next($easy);
-              
+
               if($answer.is(':hidden')) {
                   $answer.slideDown();
                   $easy.not($answer).slideUp();
                 } else { 
                   $answer.slideUp(); 
                 }
-            
                return false;
             });
           });
@@ -952,8 +980,28 @@
             });
           });
         }
+
+        if ($('.mobile-menu-btn')) {
+          var $menuBtn = $('.mobile-menu-btn');
+          var $mobileNav = $('.mobile-nav');
+          var $menuBtnClose = $('.btn-close');
+
+          $menuBtn.on('click', function() {
+            $mobileNav.slideDown();
+          })
+
+          $menuBtnClose.on('click', function() {
+            $mobileNav.slideUp();
+          })
+        };
         
       });
     </script>
   </body>
 </html>
+
+if ($('.btn-mobile__menu')) {
+    $('.btn-mobile__menu').on('click', function() {
+      $('.menu').toggleClass('visible');
+    })
+  }
