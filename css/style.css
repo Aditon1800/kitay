@@ -820,7 +820,7 @@ a {
 .person {
   float: left;
   width: calc(100% - 324px);
-  padding: 2% 9%;
+  padding: 2% 4%;
   padding-bottom: 15px;
   color: #2c2c2c;
 }
