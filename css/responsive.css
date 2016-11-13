@@ -1,4 +1,12 @@
 @media screen and (max-width: 998px) {
+
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    padding-left: 70px;
+  }
+
   .tab-pane_third .item-row {
     display: block;
   }
@@ -28,6 +36,30 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .benefit-block {
+    width: 100%;
+  }
+
+  .person-desc {
+    margin-bottom: 25px;
+  }
+
+ .person-desc .idea {
+  margin-left: 10%;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+ }
+
+  .person .person-fb {
+    height: 100px;
+  }
+
+  #question {
+    width: 84%;
+  }
+}
 
 @media (max-width: 768px) {
   #schemes,
@@ -109,11 +141,16 @@
 
   .why-us-title .icon-title {
     display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  .why-us-title .icon-title {
+    display: inline-block;
   }
 
   .cond-block {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 40px;
   }
 
   .cont-desc-title,
@@ -124,6 +161,18 @@
     padding-right: 0!important;
   }
 
+  #universities {
+    padding: 20px 0 50px;
+  }
+
+  .universities_sec-title {
+      margin-bottom: 25px;
+  }
+
+ .slide-university {
+  margin-bottom: 50px;
+ }
+
   .slide-university .inner-wrap-desc {
     /*padding: 10px;*/
   }
@@ -132,6 +181,28 @@
     font-size: 12px;
     line-height: 14px;
     /*padding-right: 15px;*/
+  }
+
+  .prev-btn {
+    width: 120px;
+  }
+
+  .prev-btn:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .click-prev {
+    float: left;
+  }
+
+  .click-zoom {
+    display: none;
+  }
+
+  .click-next {
+    float: right;
   }
 
   .enrollment-wrap {
@@ -173,6 +244,10 @@
   #why-us .why-us-list {
     display: block !important;
   }
+
+   .universities_sec-title br {
+      display: none;
+   }
 }
 
 @media screen and (max-width: 550px) {
@@ -260,8 +335,14 @@
     padding-bottom: 30px;
   }
 
-  .why-us-title .icon-title {
-    display: inline-block;
+  .slide-university .inner-wrap-desc {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-wrap-desc .text {
+    width: 100%;
+    padding-right: 0;
   }
 }
 
