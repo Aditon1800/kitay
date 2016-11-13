@@ -166,6 +166,59 @@
 }
 
 @media screen and (max-width: 550px) {
+
+  #header {
+    background: url('../img/mobile-bg.jpg') no-repeat right top;
+    background-size: cover;
+  }
+
+  #header .header-content {
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+  }
+
+  #header .header-slider {
+    display: none;
+  }
+
+  #header .logo-desc {
+    display: none;
+  }
+  
+  .header-desc {
+    padding: 25px 0 0 0;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .header-desc .header-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .header-desc .header-p {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  .header-items {
+    padding: 10px 0 35px;
+  }
+
+  .header-item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+
+
   .why-us-block1,
   .why-us-block2,
   .why-us-block3,
