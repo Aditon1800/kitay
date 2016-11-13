@@ -61,16 +61,16 @@
           </ul>
         </div>
         <div class="header-slider">
-          <div class="slide"><img src="img/slide-photo.jpg" alt="slide-photo1" class="slide-bg"></div>
-          <div class="slide"><img src="img/slide-photo.jpg" alt="slide-photo2" class="slide-bg"></div>
-          <div class="slide"><img src="img/slide-photo.jpg" alt="slide-photo3" class="slide-bg"></div>
+          <div class="header-slides">
+            <img src="img/slide-photo1.jpg" alt="slide-photo1" class="slide-bg">
+            <img src="img/slide-photo2.jpg" alt="slide-photo2" class="slide-bg">
+            <img src="img/slide-photo3.jpg" alt="slide-photo3" class="slide-bg">
+          </div>
         </div>
       </div>
 
       <div class="mobile-nav">
-
         <a class="btn-close" href="#`"></a>
-
         <ul class="mobile-nav_list">
           <li class="mobile-nav_item">
             <a href="#`">Доступные вузы</a></li>
@@ -88,10 +88,6 @@
 
         <button class="btn btn-custom">Закажите звонок</button>
       </div>
-
-
-
-
     </header>
 
 <!-- WHY US -->
@@ -873,7 +869,7 @@
         slidesToShow: 7,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        arrows: true,
+        arrows: false,
         // dots: true,
         centerMode: true,
         focusOnSelect: true,
@@ -929,6 +925,16 @@
         prevArrow: $('.slider-foto-three + .prev-btn > .click-prev'),
         nextArrow: $('.slider-foto-three + .prev-btn > .click-next')
       });
+    </script>
+    
+    <script>
+      $('.header-slides').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true
+      });
+      
     </script>
 
     <script>
@@ -999,9 +1005,3 @@
     </script>
   </body>
 </html>
-
-if ($('.btn-mobile__menu')) {
-    $('.btn-mobile__menu').on('click', function() {
-      $('.menu').toggleClass('visible');
-    })
-  }
