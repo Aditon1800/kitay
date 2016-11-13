@@ -704,7 +704,7 @@ a {
 
 .cond-block img {
   width: 100%;
-  height: auto;
+  height: 320px;
 }
 
 .cont-desc-title {
@@ -763,7 +763,7 @@ a {
 }
 
 .click-prev {
-  background: url('/img/click-prev.png') center center no-repeat;
+  background: url('../img/click-prev.png') center center no-repeat;
 }
 
 .click-prev:active {
@@ -772,7 +772,7 @@ a {
 }
 
 .click-zoom {
-  background: url('/img/click-zoom.png') center center no-repeat;
+  background: url('../img/click-zoom.png') center center no-repeat;
   /*margin: 0 20px;*/
 }
 
@@ -782,7 +782,7 @@ a {
 }
 
 .click-next {
-  background: url('/img/click-next.png') center center no-repeat;
+  background: url('../img/click-next.png') center center no-repeat;
 }
 
 .click-next:active {

@@ -430,7 +430,11 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="condition-img">
-                      <img src="img/cond-ph1.jpg" alt="">
+                      <div class="slider slider-foto-one">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
                       <div class="prev-btn">
                         <span class="click-prev"></span>
                         <span class="click-zoom"></span>
@@ -445,7 +449,11 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="condition-img">
-                      <img src="img/cond-ph2.jpg" alt="">
+                      <div class="slider slider-foto-two">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
                       <div class="prev-btn">
                         <span class="click-prev"></span>
                         <span class="click-zoom"></span>
@@ -500,14 +508,17 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="condition-img">
-                      <img src="img/cond-ph3.jpg" alt="">
+                      <div class="slider slider-foto-three">
+                        <img src="img/cond-ph1.jpg" alt="">
+                        <img src="img/cond-ph2.jpg" alt="">
+                        <img src="img/cond-ph3.jpg" alt="">
+                      </div>
                       <div class="prev-btn">
                         <span class="click-prev"></span>
                         <span class="click-zoom"></span>
                         <span class="click-next"></span>
                       </div>
                     </div>
-                  </div>
                 </div>
               </article>
 
@@ -782,6 +793,24 @@
       });
 
     </script>
+    
+    <script>
+      $('.slider-foto-one').slick({
+        prevArrow: $('.slider-foto-one + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-one + .prev-btn > .click-next')
+      });
+
+      $('.slider-foto-two').slick({
+        prevArrow: $('.slider-foto-two + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-two + .prev-btn > .click-next')
+      });
+
+      $('.slider-foto-three').slick({
+        prevArrow: $('.slider-foto-three + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-three + .prev-btn > .click-next')
+      });
+    </script>
+
     <script>
       jQuery(document).ready(function() {
 
