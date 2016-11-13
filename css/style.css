@@ -389,6 +389,7 @@ a {
 
 .slider-university-nav img {
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .slider-university-nav::after {
@@ -452,6 +453,146 @@ a {
 .uni-wrap-bottom {
   // padding: 80px 0;
   text-align: center;
+}
+
+/*// modal form */
+
+.modal-form {
+  margin: 50px 0;
+  padding: 30px 0 70px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal-form-wrapper {
+  // margin: 0 auto;
+}
+
+.modal-form_title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #2c2c2c;
+}
+
+.modal-form .input,
+.modal-form .select {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto 15px;
+  padding: 8px 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.select-block {
+  max-width: 360px;
+  width: 100%;
+  min-width: 280px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.select-block:last-of-type {
+  margin-bottom: 60px;
+}
+
+.modal-form .select {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2c2c2c;
+  background-color: #fff;
+  text-align: left;
+}
+
+.modal-form .select a {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.modal-form .select .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  display: inline-block;
+  width: 13px;
+  height: 7px;
+  background: url('../img/arr-up.png') no-repeat;
+}
+
+.modal-form .select-drop {
+  display: block;
+  margin-top: -3px;
+  padding-top: 20px;
+  background: #eee;
+}
+
+.modal-form .select-drop::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.modal-form .select-drop div{
+  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
+  float: left;
+  
+  padding: 0 0 0 50px ;
+  font-size: 14px;
+}
+
+.modal-form .select-drop label{
+  position: relative;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.modal-form .select-drop label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.modal-form .select-drop label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -29px;
+  width: 15px;
+  height: 8px;
+  display: none;
+  border: 2px solid red;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.select-drop input[type="checkbox"] {
+  display: none;
+}
+
+.select-drop input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+.modal-form .btn-modal-form {
+  width: 280px;
+  line-height: 20px;
 }
 
 /*AFTER PRE-UNIVERSITY TRAINING*/

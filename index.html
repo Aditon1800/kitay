@@ -7,7 +7,7 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -20,7 +20,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <!-- <body class="container-fluid"> -->
+  <body>
 
 <!-- HEADER -->
 
@@ -204,14 +204,12 @@
 
 
             <div class="slider-for slider-university-desc">
-
               <div class="slide-university">
                 <h3 class="title">FUDAN UNIVERSITY</h3>
                 <img class="img" src="img/uni-header-img.jpg" alt="">
                 <div class="inner-wrap-desc">
                   <p class="text">Открыт в 1960 году. Занимает первое место в Китае по метеорологии и атмосферным исследованиям.<br><br>
                   Факультеты: английского языка, западных языков, восточных языков.</p>
-
                   <button class="btn btn-custom btn-sl " data-toggle="modal" data-target="#universModal">Читать подробнее</button>
                 </div>
               </div>
@@ -286,6 +284,57 @@
                 </div>
               </div>
             </div>
+
+          <div class="modal-form">
+            <form action="">
+              <div class="modal-form-wrapper">
+                <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
+                <input class="input" name="name-mod" id="name-mod" type="text" placeholder="Имя" checked>
+                <input class="input" name="email-mod" id="email-mod" type="email" placeholder="Электропочта" checked>
+                <input class="input" name="phone-mod" id="phone-mod" type="tel" placeholder="Телефон с кодом страны" checked>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Где вы сейчас учитесь?<span class="arrow"></span></a>
+                </div>
+                <div class="select-drop">
+                  <div>
+                    <input type="checkbox" id="oneChek">
+                    <label for="oneChek">До 11 класса</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="twoChek" checked>
+                    <label for="twoChek">11 класс</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="threeChek">
+                    <label for="threeChek">Бакалавр</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="fourChek">
+                    <label for="fourChek">Магистр</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Есть ли у вас или родителей загранпаспорт<span class="arrow"></span></a>
+                </div>
+              </div>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Выберите программу обучения<span class="arrow"></span></a>
+                </div>
+              </div>
+
+              <button class="btn btn-custom btn-modal-form">Отправить</button>
+
+            </div>
+
+            </form>
+          </div>
 
           <div class="uni-wrap-bottom">
             <button class="btn btn-custom">Узнать про все вузы CCN</button>
@@ -940,6 +989,7 @@
     <script>
       jQuery(document).ready(function() {
 
+        // FAQ
         if ($('.faq-list__question')) {
 
           var $quest = $('.faq-list__question');
@@ -961,10 +1011,10 @@
           });
         };
 
+        // 
         if ($('.why-us-title')) {
 
           var $whyTitle = $('.why-us-title');
-          
           var $whyList = $('.why-us-list');
 
           $whyTitle.each(function() {
@@ -987,6 +1037,7 @@
           });
         }
 
+        // Mobile menu
         if ($('.mobile-menu-btn')) {
           var $menuBtn = $('.mobile-menu-btn');
           var $mobileNav = $('.mobile-nav');
@@ -1000,6 +1051,20 @@
             $mobileNav.slideUp();
           })
         };
+
+        // Select
+        if ($('.modal-form')) {
+          var $select = $('.modal-form .select');
+            $select.on('click', function() {
+              var $selectDrop = $(this).next('.modal-form .select-drop');
+              if($selectDrop.is(':hidden')) {
+                $selectDrop.slideDown(300);
+              } else {
+                $selectDrop.slideUp(300);
+              }
+              return false;
+            })
+          }
         
       });
     </script>

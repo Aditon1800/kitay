@@ -266,4 +266,13 @@
 }
 
 
+@media screen and (max-width: 480px) {
+  .modal-form .input,
+  .modal-form .select {
+    width: 90%;
+  }
 
+  .select-block {
+    width: 90%;
+  }
+}
