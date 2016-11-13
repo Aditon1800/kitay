@@ -28,7 +28,6 @@
     font-size: 18px;
     line-height: 30px;
   }
-}
 
 @media (max-width: 768px) {
   #schemes,
@@ -95,6 +94,12 @@
 
   #why-us .why-us-list {
     display: none;
+    padding-bottom: 10px;
+  }
+
+  #why-us .why-us-list .why-us-item {
+    font-size: 13px;
+    list-style-type: none;
   }
 
   .why-us-title {
@@ -148,6 +153,37 @@
     padding: 9px 12px !important;
   }
 
+  .slide-university .text{
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 15px;
+  }
+
+  .enrollment-wrap {
+    display: block;
+    text-align: center;
+  }
+
+  #enrollment .desc span {
+    padding-bottom: 30px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  #why-us .why-us-list {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .btn-sl {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 9px 12px !important;
+  }
+
   .why-us-block1,
   .why-us-block2,
   .why-us-block3,
@@ -172,6 +208,10 @@
     font-size: 12px;
     line-height: 30px;
     padding-bottom: 30px;
+  }
+
+  .why-us-title .icon-title {
+    display: inline-block;
   }
 }
 
