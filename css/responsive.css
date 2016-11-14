@@ -1,4 +1,53 @@
+@media screen and (max-width: 1200px) {
+  .header-content {
+    padding-left: 5%;
+  }
+
+  .header-title {
+    font-size: 32px;
+    padding: 1em 0 .5em;
+    line-height: 36px;
+  }
+
+  .header-items {
+    padding: 3em 0 4em;
+  }
+
+  .header-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ph-number {
+    font-size: 20px;
+    left: 78.5%;
+  }
+}
+
 @media screen and (max-width: 998px) {
+  .ph-number {
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    padding: 1em 0 .5em;
+    line-height: 36px;
+  }
+
+  .header-items {
+    padding: 4em 0 6em;
+  }
+
+  .header-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header-content {
+    padding-left: 2%;
+  }
 
   .why-us-block1,
   .why-us-block2,
@@ -56,6 +105,10 @@
     height: 100px;
   }
 
+ .faq-list__question {
+  font-size: 20px;
+ }
+
   #question {
     width: 84%;
   }
@@ -68,18 +121,56 @@
   #feedback,
   #popular-questions,
   #footer,
-  .condition-item {
+  .condition-item,
+  #header:before,
+  #header:after,
+  #why-us:before,
+  #schemes:before,
+  #schemes:after,
+  #popular-questions:before,
+  #popular-questions:after  {
     display: none;
   }
 
-  #mob-cocial {
+  .mob-social {
     display: block;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .ph-number {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15%;
+    font-size: 18px;
+    line-height: 32pxx;
+  }
+
+  .ph-number br {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .ph-number b {
+    display: none;
   }
 
   #header {
     background: url('/img/mobile-bg.jpg') 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+  }
+
+  .header-content {
+    float: none;
+    width: 100%;
+  }
+
+  .logo-desc {
+    display: none;
   }
 
   .header-slider {
@@ -269,20 +360,12 @@
     padding: 0 15px;
   }
 
-  #header .header-slider {
-    display: none;
-  }
-
   #header .logo-desc {
     display: none;
   }
   
   .header-desc {
     padding: 25px 0 0 0;
-  }
-
-  .mobile-menu-btn {
-    display: block;
   }
 
   .header-desc .header-title {

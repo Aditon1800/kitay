@@ -786,7 +786,7 @@
 
 <!-- CONTACT -->
 
-<!--           <footer id="footer">
+          <footer id="footer">
             <div class="custom-cont">
               <h1 class="sec-title">Контакты компании</h1>
 
@@ -818,10 +818,10 @@
                 </div>
 
             </div>
-          </footer> -->
+          </footer>
 
     <!-- Modal -->
-<!--     <div class="modal fade" id="universModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="universModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -837,7 +837,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -860,7 +860,7 @@
         slidesToShow: 7,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        arrows: false,
+        arrows: true,
         // dots: true,
         centerMode: true,
         focusOnSelect: true,
@@ -873,7 +873,7 @@
               slidesToShow: 5,
               slidesToScroll: 1,
               autoplay: false,
-              arrows: false
+              arrows: true
             }
           },
           {
@@ -883,7 +883,7 @@
               slidesToShow: 3,
               slidesToScroll: 4,
               autoplay: false,
-              arrows: false
+              arrows: true
             }
           },
           {
@@ -893,7 +893,7 @@
               slidesToShow: 1,
               slidesToScroll: 1,
               autoplay: false,
-              arrows: false
+              arrows: true
             }
           }
         ]
@@ -940,12 +940,18 @@
             $(this).on('click', function() {
 
               var $answer = $(this).next($easy);
+              var $child = $(this).children('span');
+              var $span =$('.faq-list__question span');
+
 
               if($answer.is(':hidden')) {
                   $answer.slideDown();
+                  $span.removeClass('click-qw-icon-minus').addClass('click-qw-icon');
+                  $child.removeClass('click-qw-icon').addClass('click-qw-icon-minus')
                   $easy.not($answer).slideUp();
                 } else { 
-                  $answer.slideUp(); 
+                  $answer.slideUp();
+                  $child.removeClass('click-qw-icon-minus').addClass('click-qw-icon')
                 }
                return false;
             });
