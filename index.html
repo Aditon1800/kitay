@@ -284,8 +284,9 @@
                 </div>
               </div>
             </div>
-
-          <div class="modal-form">
+        
+          <!-- Step 1  -->
+          <div class="modal-form visible">
             <form action="">
               <div class="modal-form-wrapper">
                 <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
@@ -335,6 +336,162 @@
 
             </form>
           </div>
+
+          <!-- Step 2  -->
+          <div class="modal-form">
+            <form action="">
+              <div class="modal-form-wrapper">
+                <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
+
+                <ul class="step-line">
+                  <li class="step-line_item">1</li>
+                  <li class="step-line_item active">2</li>
+                  <li class="step-line_item">3</li>
+                  <li class="step-line_item">4</li>
+                  <li class="step-line_item">5</li>
+                </ul>
+
+                <input class="input" name="name-mod" id="name-mod" type="text" placeholder="Скайп, если удобно связаться по нему" checked>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Удобное время звонка по Мск<span class="arrow"></span></a>
+                </div>
+                <div class="select-drop">
+                  <div>
+                    <input type="checkbox" id="oneChek">
+                    <label for="oneChek">11:30 - 13:30</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="twoChek" checked>
+                    <label for="twoChek">13:30 - 16:30</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="threeChek">
+                    <label for="threeChek">16:30 - 19:30</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Вы ученик или родитель?<span class="arrow"></span></a>
+                </div>
+              </div>
+
+              <button class="btn btn-custom btn-modal-form">Следующий этап</button>
+
+            </div>
+          </form>
+        </div>
+
+
+        <!-- Step 3  -->
+          <div class="modal-form">
+            <form action="">
+              <div class="modal-form-wrapper">
+                <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
+
+                <ul class="step-line">
+                  <li class="step-line_item">1</li>
+                  <li class="step-line_item">2</li>
+                  <li class="step-line_item active">3</li>
+                  <li class="step-line_item">4</li>
+                  <li class="step-line_item">5</li>
+                </ul>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">На каком языке хотите учиться?<span class="arrow"></span></a>
+                </div>
+              </div>
+              
+              <textarea class="textarea" placeholder="Какие специальности вас интересуют?"></textarea>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Средняя оценка в прошлом учебном году<span class="arrow"></span></a>
+                </div>
+              </div>
+
+              <div class="select-block">
+                <div class="select">
+                  <a href="#`" class="dropdown-toggle">Хобби и интересы<span class="arrow"></span></a>
+                </div>
+              </div>
+
+              <button class="btn btn-custom btn-modal-form">Следующий этап</button>
+
+            </div>
+          </form>
+        </div>
+
+
+          <!-- Step 4  -->
+          <div class="modal-form">
+            <form action="">
+              <div class="modal-form-wrapper">
+                <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
+
+                <ul class="step-line">
+                  <li class="step-line_item">1</li>
+                  <li class="step-line_item">2</li>
+                  <li class="step-line_item">3</li>
+                  <li class="step-line_item active">4</li>
+                  <li class="step-line_item">5</li>
+                </ul>
+
+                <div class="group-input group-input_date">
+                  <h3 class="inner-title">Дата рождения</h3>
+                  <input class="input" type="text" placeholder="11">
+                  <input class="input" type="text" placeholder="10">
+                  <input class="input" type="text" placeholder="1987">
+                </div>
+
+                <div class="group-check">
+                  <h3 class="inner-title">Пол</h3>
+                  <div class="group-check_wrap">
+                    <div>
+                      <input type="checkbox" id="sex-m">
+                      <label for="sex-m">Мужской</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="sex-f" checked>
+                      <label for="sex-f">Женский</label>
+                    </div>
+                  </div>
+                </div>
+
+                 <input class="input" type="text" placeholder="Населенный пункт" checked>
+
+              <button class="btn btn-custom btn-modal-form">Следующий этап</button>
+
+            </div>
+          </form>
+        </div>
+
+
+        <!-- Step 5  -->
+          <div class="modal-form" data-is-last="true">
+            <form action="">
+              <div class="modal-form-wrapper">
+                <h2 class="modal-form_title">Отправьте заявку сейчас.</h2>
+
+                <ul class="step-line">
+                  <li class="step-line_item">1</li>
+                  <li class="step-line_item">2</li>
+                  <li class="step-line_item">3</li>
+                  <li class="step-line_item">4</li>
+                  <li class="step-line_item active">5</li>
+                </ul>
+
+              <textarea class="textarea textarea-lg" placeholder="Дополнительные вопросы и пожелания"></textarea>
+
+              <button class="btn btn-custom btn-modal-form">Следующий этап</button>
+
+            </div>
+          </form>
+        </div>
 
           <div class="uni-wrap-bottom">
             <button class="btn btn-custom">Узнать про все вузы CCN</button>
@@ -958,7 +1115,7 @@
       });
 
     </script>
-    
+
     <script>
       $('.slider-foto-one').slick({
         prevArrow: $('.slider-foto-one + .prev-btn > .click-prev'),
@@ -975,7 +1132,7 @@
         nextArrow: $('.slider-foto-three + .prev-btn > .click-next')
       });
     </script>
-    
+
     <script>
       $('.header-slides').slick({
         dots: true,
@@ -986,87 +1143,6 @@
       
     </script>
 
-    <script>
-      jQuery(document).ready(function() {
-
-        // FAQ
-        if ($('.faq-list__question')) {
-
-          var $quest = $('.faq-list__question');
-          var $easy = $('.faq-list__answer');
-
-          $quest.each(function() {
-            $(this).on('click', function() {
-
-              var $answer = $(this).next($easy);
-
-              if($answer.is(':hidden')) {
-                  $answer.slideDown();
-                  $easy.not($answer).slideUp();
-                } else { 
-                  $answer.slideUp(); 
-                }
-               return false;
-            });
-          });
-        };
-
-        // 
-        if ($('.why-us-title')) {
-
-          var $whyTitle = $('.why-us-title');
-          var $whyList = $('.why-us-list');
-
-          $whyTitle.each(function() {
-            $(this).on('click', function() {
-              
-              var $whyListNext = $(this).next($whyList);
-              var $questIcon = $(this).children('.icon-title');
-
-              if ($whyListNext.is(':hidden')) {
-                  $whyListNext.slideDown();
-                  $questIcon.removeClass('icon-title_plus').addClass('icon-title_minus');
-
-              } else { 
-                $whyListNext.slideUp();
-                $questIcon.removeClass('icon-title_minus').addClass('icon-title_plus');
-              }
-            
-               return false;
-            });
-          });
-        }
-
-        // Mobile menu
-        if ($('.mobile-menu-btn')) {
-          var $menuBtn = $('.mobile-menu-btn');
-          var $mobileNav = $('.mobile-nav');
-          var $menuBtnClose = $('.btn-close');
-
-          $menuBtn.on('click', function() {
-            $mobileNav.slideDown();
-          })
-
-          $menuBtnClose.on('click', function() {
-            $mobileNav.slideUp();
-          })
-        };
-
-        // Select
-        if ($('.modal-form')) {
-          var $select = $('.modal-form .select');
-            $select.on('click', function() {
-              var $selectDrop = $(this).next('.modal-form .select-drop');
-              if($selectDrop.is(':hidden')) {
-                $selectDrop.slideDown(300);
-              } else {
-                $selectDrop.slideUp(300);
-              }
-              return false;
-            })
-          }
-        
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
