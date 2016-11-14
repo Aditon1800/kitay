@@ -142,5 +142,62 @@ jQuery(document).ready(function() {
       $(this).fadeOut('fast');
     })
   }
+
+    // iframe video
+    (function() {
+
+      var iframeVideo = $('#modal-iframe iframe');
+      var videoSrc = iframeVideo.attr('src');
+      var overIframe = $('.overlay-iframe');
+
+      $('.play-btn').on('click', function() {
+        // link to the video (added to html)
+        var iframeLink = $(this).next('.frame-video_link').attr('href');
+
+        $(overIframe).show();
+        $('#modal-iframe').show();
+        iframeVideo.attr('src', iframeLink);
+      });
+
+      $(overIframe).on('click', function() {
+
+        $('#modal-iframe').hide();
+        $(this).hide();
+        iframeVideo.attr('src', '');
+      });
+    }());
+
+
+    // zoom img slick
+
+    (function() {
+
+      $('.slider').each(function() {
+        var zoom = $(this).next('.prev-btn').find('.click-zoom');
+        var imgActive = $(this).find('.slick-slide');
+        zoom.on('click', function() {
+
+          imgActive.each(function() {
+            if ($(this).hasClass('slick-active')) {
+              var srcImg = $(this).attr('src');
+              $('#modal-zoom').show();
+              $('#modal-zoom').find('img').attr('src', srcImg);
+            }
+          });
+
+          //var srcImgActive = imgActive.attr('src');
+
+          //$('#modal-zoom').show();
+          //$('#modal-zoom').find('img').attr('src', imgActive);
+        })
+
+        $('#modal-zoom').on('click', function() {
+          $(this).hide();
+          $('#modal-zoom').find('img').attr('src', '');
+        })
+      })
+
+
+    }());
 });
 
