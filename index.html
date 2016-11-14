@@ -871,7 +871,8 @@
               <div class="frame-video">
                 <div class="person-bg">
                   <img src="img/feedback/fr-photo1.jpg" alt="">
-                  <span class="play-btn" data-toggle="modal" data-target="#myModal2"></span>
+                  <span class="play-btn"></span>
+                  <a class= "frame-video_link" href="https://www.youtube.com/embed/y3azwAo5E5U"></a>
                 </div>
                 
               </div>
@@ -903,6 +904,7 @@
                 <div class="person-bg">
                   <img src="img/feedback/fr-photo2.jpg" alt="">
                   <span class="play-btn"></span>
+                  <a class= "frame-video_link" href="https://www.youtube.com/embed/vSelchUB4qA"></a>
                 </div>
               </div>
             </article>
@@ -933,6 +935,7 @@
                 <div class="person-bg">
                   <img src="img/feedback/fr-photo3.jpg" alt="">
                   <span class="play-btn"></span>
+                  <a class= "frame-video_link" href="https://www.youtube.com/embed/ffJlGuRJcSU"></a>
                 </div>
               </div>
             </article>
@@ -944,18 +947,11 @@
 
 <!-- MODAL -->
 
-      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ffJlGuRJcSU" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
+      <div class="overlay-iframe" id="modal-iframe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-iframe_content">
+
+          <iframe class="iframe" src="" frameborder="0" allowfullscreen></iframe>
+
         </div>
       </div>
 
@@ -1113,6 +1109,11 @@
           </footer>
 
       <div id="overlay"></div>
+      <div id="modal-zoom">
+        <div class="modal-zoom_content">
+          <img src="">
+        </div>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

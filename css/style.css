@@ -1753,3 +1753,66 @@ input[type="phone"],
   display: inline-block;
   margin: 0 .7em;
 }
+
+
+/* iframe modal */
+
+.frame-video_link {
+  display: none;
+}
+
+.overlay-iframe {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  background-color: rgba(0,0,0,.5);
+}
+
+.modal-iframe_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 350px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-iframe_content iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* modal zoom */
+
+#modal-zoom {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0,0,0,.5);
+}
+
+.modal-zoom_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-zoom_content img {
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  border: 4px solid white;
+}
