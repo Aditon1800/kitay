@@ -99,12 +99,42 @@ jQuery(document).ready(function() {
       var elStep = $(this).parents('.modal-form');
 
       if ( elStep.data('is-last') === undefined ) {
-        elStep.removeClass('visible')
+        elStep.hide()
               .next()
-              .addClass('visible');
+              .show();
       };
 
       return false;
     }
   }
+
+
+
+  // Popup menu
+  if ($('#btn-uni-desc') && ($('#popup-btn'))) {
+    var $modalBtn = $('#popup-btn');
+    var $modalForm = $('.modal-form');
+    var $modalFormFirst= $('.modal-form-first');
+    var $overlay = $('#overlay');
+    var $descBtn = $('#btn-uni-desc');
+    var $popup= $('#popup-window');
+
+
+    $descBtn.on('click', function() {
+      $popup.fadeIn();
+      $overlay.fadeIn('fast');
+    })
+
+    $modalBtn.on('click', function() {
+      $modalFormFirst.fadeIn();
+      $overlay.fadeIn('fast');
+    })
+
+    $overlay.on('click', function() {
+      $popup.fadeOut('fast');
+      $modalForm.fadeOut();
+      $(this).fadeOut('fast');
+    })
+  }
 });
+

@@ -49,6 +49,15 @@
     padding-left: 2%;
   }
 
+  .header-slider {
+    display: none;
+  }
+
+  #header {
+    background: url('../img/mobile-bg.jpg') no-repeat right top;
+    background-size: cover;
+  }
+
   .why-us-block1,
   .why-us-block2,
   .why-us-block3,
@@ -158,22 +167,12 @@
     display: none;
   }
 
-  #header {
-    background: url('/img/mobile-bg.jpg') 0 0 no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-
   .header-content {
     float: none;
     width: 100%;
   }
 
   .logo-desc {
-    display: none;
-  }
-
-  .header-slider {
     display: none;
   }
 
@@ -308,6 +307,10 @@
 
 @media screen and (max-width: 550px) {
 
+  .ph-number {
+    padding-right: 10%;
+  }
+
   .btn-sl {
     font-size: 12px !important;
     line-height: 12px !important;
@@ -347,11 +350,6 @@
     font-size: 12px !important;
     line-height: 12px !important;
     padding: 9px 12px !important;
-  }
-
-  #header {
-    background: url('../img/mobile-bg.jpg') no-repeat right top;
-    background-size: cover;
   }
 
   #header .header-content {
