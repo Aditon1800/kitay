@@ -1,7 +1,22 @@
+@font-face {
+ font-family: 'Open Sans';
+ src: url('../fonts/OpenSans-Regular_0.tt');
+src: local(''),
+ url('../fonts/OpenSans-Regular_0.tt') format('truetype');
+}
+
+@font-face {
+ font-family: 'Open Sans';
+ src: url('../fonts/OpenSans-Semibold_0.ttf');
+src: local(''),
+ url('../fonts/OpenSans-Semibold_0.ttf') format('truetype');
+}
+
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif !important;
   color: #2c2c2c;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -94,7 +109,7 @@ a {
   top: -70px;
   right: 0;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 #header:before {
@@ -107,7 +122,7 @@ a {
   top: -130px;
   right: 0;
   z-index: 10;
-  opacity: .6;
+  opacity: 1;
 }
 
 .header-content {
@@ -297,7 +312,7 @@ a {
   top: 60px;
   right: 0;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 #why-us .sec-title {
@@ -387,7 +402,7 @@ a {
 
 #universities {
   padding: 50px 0 80px;
-  background: url('../img/bg-uni.jpg') repeat;
+  background-color: #f5f5f5;
 }
 
 .universities_sec-title {
@@ -483,6 +498,10 @@ a {
   position: relative;
 }
 
+.slider-uni-wrapper .slick-list {
+  border-radius: 5px;
+}
+
 #popup-window {
   position: absolute;
   background-color: #fff;
@@ -549,10 +568,10 @@ a {
 }
 
 .modal-form {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  right: 10%;
+  left: 10%;
   display: none;
   min-height: 520px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -601,7 +620,6 @@ a {
 }
 
 .modal-form {
-  margin: 50px 0;
   padding: 30px 0 70px;
   text-align: center;
   background-color: #fff;
@@ -623,7 +641,7 @@ a {
   width: 100%;
   min-width: 280px;
   margin: 0 auto 15px;
-  padding: 8px 10px;
+  padding: 8px;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
 }
@@ -819,14 +837,13 @@ a {
 
 .modal-form .btn-modal-form {
   width: 280px;
-  margin-top: 50px;
   line-height: 20px;
 }
 
 /*AFTER PRE-UNIVERSITY TRAINING*/
 
 #benefit-after {
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
   padding-top: 55px;
   padding-bottom: 100px;
 }
@@ -918,7 +935,7 @@ a {
   top: 60px;
   left: -50px;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 #schemes:after{
@@ -931,7 +948,7 @@ a {
   top: 40%;
   right: 0;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 .tabs-scheme {
@@ -1155,6 +1172,7 @@ a {
   font-weight: 400;
   line-height: 36px;
   color: #2c2c2c;
+  text-align: left;
 }
 
 /*CONDITIONS*/
@@ -1175,7 +1193,8 @@ a {
 }
 
 .cond-block {
-  padding: 0 70px 40px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .cond-block .col-xs-12 {
@@ -1202,19 +1221,39 @@ a {
   padding: 12px 0;
 }
 
-.cond-block:first-child .cont-desc-title,
-.cond-block:first-child .condition-item  {
+.cond-block:first-of-type .cont-desc-title,
+.cond-block:first-of-type .condition-item  {
   padding-left: 6%;
+  padding-right: 70px;
 }
 
-.cond-block:nth-child(2) .cont-desc-title,
-.cond-block:nth-child(2) .condition-item  {
-  padding-left: 6%;
+.cond-block:nth-of-type(2) .cont-desc-title,
+.cond-block:nth-of-type(2) .condition-item  {
+  padding-right: 12%;
+  padding-left: 70px;
 }
 
-.cond-block:nth-child(3) .cont-desc-title,
-.cond-block:nth-child(3) .condition-item  {
-  padding-left: 15%;
+.cond-block:nth-of-type(3) .cont-desc-title,
+.cond-block:nth-of-type(3) .condition-item  {
+  padding-right: 70px;
+  padding-left: 14%;
+}
+
+.cond-sh1:before,
+.cond-sh2:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 130%;
+  top: 0;
+  left: -30%;
+  bottom: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.cond-sh2:before {
+  right: -30%;
+  left: 0;
 }
 
 .condition-img {
@@ -1276,7 +1315,7 @@ a {
 
 #feedback {
   padding-top: 80px;
-  background: url('../img/bg-uni.jpg');
+  background-color: #f5f5f5;
 }
 
 .feedback_sec-title {
@@ -1459,7 +1498,7 @@ a {
   top: 100px;
   left: -60px;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 #popular-questions:after{
@@ -1472,7 +1511,7 @@ a {
   top: 40%;
   right: 0;
   z-index: 10;
-  opacity: .6;
+  opacity: .2;
 }
 
 #popular-questions .sec-title {
@@ -1603,7 +1642,7 @@ input[type="phone"],
 /*CONTACTS*/
 
 #footer {
-  background: url('../img/bg-uni.jpg');
+  background-color: #f5f5f5;
   padding-top: 20px;
   padding-bottom: 100px;
 }
