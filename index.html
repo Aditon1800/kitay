@@ -322,7 +322,7 @@
                     <div class="row">
                         <div class="col-md-8">
                         <div class="condition-img">
-                          <div class="slider slider-foto-one">
+                          <div class="slider slider-foto-four">
                             <img src="img/cond-ph1.jpg" alt="">
                             <img src="img/cond-ph2.jpg" alt="">
                             <img src="img/cond-ph3.jpg" alt="">
@@ -871,7 +871,7 @@
               <div class="frame-video">
                 <div class="person-bg">
                   <img src="img/feedback/fr-photo1.jpg" alt="">
-                  <span class="play-btn"></span>
+                  <span class="play-btn" data-toggle="modal" data-target="#myModal2"></span>
                 </div>
                 
               </div>
@@ -939,9 +939,25 @@
 
           </div>       
           </div>
-
         </div>
       </section>
+
+<!-- MODAL -->
+
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ffJlGuRJcSU" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <!-- YOU CAN BE ENROLLED NOW -->
 
@@ -1093,7 +1109,6 @@
                     <a href="#~" class="yt"></a>
                   </div>
                 </div>
-
             </div>
           </footer>
 
@@ -1106,6 +1121,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
+        $('.modal').on('hide.bs.modal', function () {
+          var video = document.getElementsByTagName('frame');
+          for (var i = 0; i < video.length; i++) {
+            video[i].pause();
+          }
+          });
 
       $('.slider-for').slick({
         slidesToShow: 1,
@@ -1175,6 +1196,11 @@
       $('.slider-foto-three').slick({
         prevArrow: $('.slider-foto-three + .prev-btn > .click-prev'),
         nextArrow: $('.slider-foto-three + .prev-btn > .click-next')
+      });
+
+      $('.slider-foto-four').slick({
+        prevArrow: $('.slider-foto-four + .prev-btn > .click-prev'),
+        nextArrow: $('.slider-foto-four + .prev-btn > .click-next')
       });
     </script>
 

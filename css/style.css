@@ -491,8 +491,8 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  display: none;
-  z-index: 1100;
+  opacity: 0;
+  z-index: -10;
 }
 
 #popup-window .container .row:first-child {

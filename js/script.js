@@ -121,7 +121,10 @@ jQuery(document).ready(function() {
 
 
     $descBtn.on('click', function() {
-      $popup.fadeIn();
+      $popup.css({
+        opacity: 1,
+        zIndex: 1100
+      });
       $overlay.fadeIn('fast');
     })
 
@@ -131,7 +134,10 @@ jQuery(document).ready(function() {
     })
 
     $overlay.on('click', function() {
-      $popup.fadeOut('fast');
+      $popup.css({
+        opacity: 0,
+        zIndex: -1
+      });
       $modalForm.fadeOut();
       $(this).fadeOut('fast');
     })
