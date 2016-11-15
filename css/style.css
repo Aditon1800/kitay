@@ -86,8 +86,7 @@ a {
 /*HEADER*/
 
 .custom-cont {
-  min-width: 100%;
-  max-width: 1500px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -386,14 +385,19 @@ a {
   height: 19px;
 }
 
+.why-us-title .icon-title_plus,
+.why-us-title .icon-title_minus {
+  background-size: 27px 27px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .why-us-title .icon-title_plus {
   background: url('../img/mob-plus.png') center;
-  background-size: 27px 27px;
 }
 
 .why-us-title .icon-title_minus {
   background: url('../img/mob-minus.png') center;
-  background-size: 27px 27px;
 }
 
 .why-us-item {
@@ -477,6 +481,10 @@ a {
   padding-bottom: 0;
 }
 
+  .inner-wrap-desc .text:nth-child(2) {
+    display: none;
+  }
+
 .slide-university .text {
   width: 62%;
   font-size: 24px;
@@ -517,6 +525,18 @@ a {
   left: 0;
   opacity: 0;
   z-index: -10;
+}
+
+#popup-window .btn-close {
+  display: none!important;
+  position: fixed;
+  top: 16px;
+  right: 1%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url('../img/cclose-mb.png') no-repeat center;
+  z-index: 100;
 }
 
 #popup-window .container .row:first-child {
@@ -1550,7 +1570,8 @@ a {
   display: block;
   font-size: 22px;
   font-weight: 400;
-  padding: 0.4em 2em 0.4em 1.8em;
+  line-height: 1.1;
+  padding: 0.4em 3em 0.4em 1.8em;
   text-decoration: none;
   color: #2c2c2c;
   background-color: whitesmoke;
