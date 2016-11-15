@@ -37,6 +37,15 @@
     line-height: 20px;
     padding: 8px 26px 8px 0;
   }
+
+  .person-desc .idea {
+    margin-left: 30%;
+    line-height: 26px;
+  }
+
+  .person .person-fb {
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -122,7 +131,7 @@
   }
 
   .person-desc {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
  .person-desc .idea {
@@ -392,6 +401,8 @@
   }
 
   .header-item {
+    -webkit-background-size: 4%;
+    background-size: 4%;
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
@@ -443,10 +454,18 @@
     display: none;
   }
 
+  .inner-wrap-desc .text:nth-child(2) {
+    display: block;
+  }
+
   .inner-wrap-desc .text {
     width: 100%;
     padding-right: 0;
     text-align: left;
+  }
+
+  .uni-wrap-bottom {
+    padding: 20px 0;
   }
 
   #enrollment .desc {
@@ -525,13 +544,105 @@
   }
 
   #enrollment .desc span {
-    padding: 10px 35px 0;
+    padding: 10px 35px 20px;
     line-height: 20px;
   }
 
   #enrollment .btn-custom {
     width: 240px;
     font-size: 12px;
+  }
+
+  #popup-window {
+    /*display: none;*/
+    background-color: whitesmoke;
+  }
+
+  #popup-window .btn-close {
+    display: block!important;
+  }
+
+  #popup-window .title {
+    display: none;
+  }
+
+  #popup-window .container .row:first-child {
+    padding-bottom: 0;
+  }
+
+  #popup-window .col-md-8,
+  #popup-window .col-md-4 {
+    padding: 0 25px 20px;
+  }
+
+ .mb-form_no-content {
+    display: none;
+  }
+
+  .popup-title {
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 5px;
+  }
+
+  #popup-window .col-md-4 .popup-title {
+    padding-left: 0;
+  }
+
+  .popup-desc,
+  .popup-item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  #popup-window ul {
+    padding: 0;
+  }
+
+  .popup-item {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  #popup-btn {
+    margin: 20px auto 40px ;
+  }
+
+  .modal-form {
+    padding: 20px 0 70px;
+  }
+
+  .modal-form_title {
+    font-size: 14px;
+  }
+
+  .modal-form .input,
+  .modal-form .select {
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .select-drop label {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  .btn-modal-form {
+    width: 230px;
+    font-size: 11px;
+  }
+
+  .select-block:last-of-type {
+    margin-bottom: 15px;
+  }
+
+  .step-line {
+    margin-bottom: 15px;
+  }
+
+  .modal-form .step-line_item {
+    width: 30px;
+    height: 30px;
   }
 }
 
