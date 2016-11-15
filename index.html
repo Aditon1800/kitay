@@ -82,12 +82,13 @@
         </ul>
 
         <div class="whatsapp">
-          Задайте вопрос в ВотсАп: <i class="icon-wp"></i><br>
-          
+          Задайте вопрос в ВотсАп: 
+            <a href="tel:1234561234"><i class="icon-wp"></i></a><br>
+            <!-- <a href="whatsapp://call?number=##########"><i class="icon-wp"></i></a><br> -->
           <span>или</span>
         </div>
 
-        <button class="btn btn-custom">Закажите звонок</button>
+        <button class="btn btn-custom" data-button="call-popup">Закажите звонок</button>
       </div>
     </header>
 
@@ -206,7 +207,7 @@
               </div>
             </div>
 
-
+                <!-- Слайды для превьшек -->
 
             <div class="slider-uni-wrapper">
               <div class="slider-for slider-university-desc">
@@ -222,7 +223,7 @@
                     <p class="text">Входит в Лигу C9 (лига лучших университетов КНР). Один из самых престижных и старейших вузов Китая. 43 позиция в мировом рейтинге.</p><br>
                     <p class="text">Направление подготовки: "Медицина, Экономика, Менеджмент, Литература, Языки, Философия, Инженерия, История, Право"</p>
 
-                    <button class="btn btn-custom btn-sl" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="0">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -237,7 +238,7 @@
                     <p class="text">Входит в Лигу C9 (лига лучших китайских вузов). Сильное транспортное направление. Ведущий научно-исследовательский и комплексный университет.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Языки, Искусство и Дизайн, Инженерия, Строительство, Наука, Медицина"</p>
 
-                    <button class="btn btn-custom btn-sl " id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="1">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -252,7 +253,7 @@
                     <p class="text">Один из старейших вузов, крупнейший многопрофильный университет, отличный выбор специальностей. </p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Литература, Языки, Искусство и дизайн, Кино и ТВ, Философия, Инженерия, Строительство, Право, Наука, История"</p>
 
-                    <button class="btn btn-custom btn-sl" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="2">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -267,7 +268,7 @@
                     <p class="text">Входит в Лигу C9 (лига лучших вузов Китая). Многопрофильный университет, отличный выбор специальностей, включая медицину и MBBS.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Литература, Языки, Искусство и Дизайн, Философия, Инженерия, Строительство, Образование, Сельское хозяйство, Медицина, Наука, История"</p>
 
-                    <button class="btn btn-custom btn-uni" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="3">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -282,7 +283,7 @@
                     <p class="text">Крупный многопрофильный, научно-ориентированный университет с инженерной силой и стратегией интернационализации. Создан на базе университета наук и технологий, медицинского и педагогического колледжей. Развитое медицинское направление в вузе и MBBS.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Литература, Языки, Искусство и дизайн, Инженерия, Наука, Образование, Сельское хозяйство, Медицина"</p>
 
-                    <button class="btn btn-custom btn-uni" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="4">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -297,7 +298,7 @@
                     <p class="text">Ведущий вуз по нефтегазовому направлению и инженерным специальностям. Находится на побережье. Мягкий климат.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Литература, Языки, Право, Искусство и дизайн, Инженерия, Строительство, Нефтегазовое дело, Наука"</p>
 
-                    <button class="btn btn-custom btn-uni" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="5">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -312,7 +313,7 @@
                     <p class="text">Ведущий лингвистический вуз. ВВА и МВА, одна из лучших бизнес-школ Китая.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Литература, Языки, Право"</p>
 
-                    <button class="btn btn-custom btn-uni" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="6">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -327,7 +328,7 @@
                     <p class="text">Развито направление экономики и бизнеса. Вуз ориентирвоан на работу только с иностранцами (китайский студентов нет). Много русскоязычных студентов.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Право"</p>
 
-                    <button class="btn btn-custom btn-uni" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="7">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -342,7 +343,7 @@
                     <p class="text">Политехнический университет. Входит в Лигу С9 (лига лучших вузов КНР). Один из ведущих технологических и инженерных вузов.</p><br>
                     <p class="text">Направление подготовки: "Экономика, Менеджмент, Инженерия, Архитектура"</p>
 
-                    <button class="btn btn-custom btn-sl" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="8">Читать подробнее</button>
                   </div>
                 </div>
 
@@ -357,15 +358,16 @@
                     <p class="text">Входит в лигу C9.</p><br>
                     <p class="text">Направление подготовки: "Литература, Инженерия, Наука, Право, Менеджмент, Медицина"</p>
 
-                    <button class="btn btn-custom btn-sl" id="btn-uni-desc">Читать подробнее</button>
+                    <button class="btn btn-custom btn-sl " data-call="preview" data-index="9">Читать подробнее</button>
                   </div>
                 </div>
               </div>
+            </div>
 
-            <!-- POPUP 1-->
+            <!-- POPUP1 -->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">FUDAN UNIVERSITY</h3>
@@ -447,8 +449,8 @@
 
             <!-- POPUP2 -->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">SHANGHAI JIAO TONG UNIVERSITY</h3>
@@ -527,8 +529,8 @@
 
             <!-- POPUP 3-->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">SHANGHAI UNIVERSITY</h3>
@@ -630,8 +632,8 @@
 
             <!-- POPUP4 -->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">ZHEJIANG UNIVERSITY</h3>
@@ -718,8 +720,8 @@
 
             <!-- POPUP5-->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">JIANGSU UNIVERSITY</h3>
@@ -816,8 +818,8 @@
 
             <!-- POPUP6 -->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">CHINA UNIVERSITY OF PETROLEUM</h3>
@@ -911,8 +913,8 @@
 
             <!-- POPUP 7-->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">BEIJING FOREIGN STUDIES UNIVERSITY</h3>
@@ -986,8 +988,8 @@
 
             <!-- POPUP8 -->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">UNIVERSITY OF INTERNATIONAL BUSINESS AND ECONOMICS</h3>
@@ -1065,8 +1067,8 @@
 
             <!-- POPUP 9-->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">HARBIN INSTITUTE OF TECHNOLOGY</h3>
@@ -1147,8 +1149,8 @@
 
             <!-- POPUP 10-->
 
-              <div id="popup-window">
-                <a class="btn-close" href="#`"></a>
+              <div class="popup-window">
+                <button class="btn-close"></button>
                 <div class="container">
                   <div class="row">
                     <h3 class="title">XI'AN JIAOTONG UNIVERSITY</h3>
@@ -1224,6 +1226,14 @@
                     </div>
                 </div>
               </div>
+              <!-- Второй попап -->
+              <div class="popup-window">
+                <button class="btn-close"></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti quidem quasi excepturi aperiam ratione ducimus nostrum esse, porro commodi.</p>
+              </div>
+              <!-- Третий и так далее -->
+
+              <!-- Конец попап окон-->
 
           <!-- Step 1  -->
           <div class="modal-form modal-form-first">
@@ -1992,8 +2002,14 @@
               </li>
             </ul>
 
+
+            </div>
+          </div>
+        </section>
+
 <!-- FORM -->
 
+          <secton id="form-visible">
             <div class="form">
               <form action="">
                 <h3 class="form-decs">Не нашли ответ на наш вопрос?</h3>
@@ -2004,9 +2020,8 @@
                 <button class="btn btn-custom btn-question">Задать вопрос</button>
               </form>
             </div>
-            </div>
-          </div>
-        </section>
+          </secton>
+
 
 <!-- CONTACT -->
 

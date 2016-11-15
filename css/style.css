@@ -252,7 +252,7 @@ a {
   right: 0;
   padding: 60px 45px;
   background-color: #eee;
-  z-index: 9999;
+  z-index: 2000;
   text-align: center;
 }
 
@@ -333,7 +333,7 @@ a {
   padding-left: 20px;
   padding-bottom: 20px;
   width: 80%;
-  min-height: 296px;
+  // min-height: 296px;
 }
 
 .why-us-block1:after,
@@ -404,7 +404,6 @@ a {
 .why-us-item {
   font-size: 18px;
   line-height: 26px;
-  list-style-type: disc;
   margin-left: 20px;
 }
 
@@ -523,6 +522,7 @@ a {
   border-radius: 5px;
 }
 
+.popup-window,
 #popup-window {
   position: absolute;
   background-color: #fff;
@@ -535,32 +535,42 @@ a {
   z-index: -10;
 }
 
+.popup-window .btn-close,
 #popup-window .btn-close {
   display: none!important;
   position: fixed;
   top: 16px;
-  right: 1%;
+  right: 4%;
   display: block;
   width: 48px;
   height: 48px;
   background: url('../img/cclose-mb.png') no-repeat center;
   z-index: 100;
+  border: none;
 }
 
+.popup-window .btn-close:focus {
+  outline: none;
+}
+
+.popup-window .container .row:first-child,
 #popup-window .container .row:first-child {
   padding-bottom: 40px;
 }
 
+.popup-window .col-md-4,
 #popup-window .col-md-4 {
   background-color: whitesmoke;
   border-radius: 17px;
   background-clip: content-box;
 }
 
+.popup-window .col-md-4 .popup-title,
 #popup-window .col-md-4 .popup-title {
   padding-left: 35px;
 }
 
+.popup-window .title,
 #popup-window .title {
   color: #2c2c2c;
   font-size: 24px;
@@ -617,7 +627,7 @@ a {
   display: none;
   min-height: 520px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  z-index: 1200;
+  z-index: 2500;
 }
 
 .modal-form__btn-close {
@@ -1231,6 +1241,8 @@ a {
 /* OTHER STYLE SEC */
 
 .scheme-bottom-info {
+  max-width: 830px;
+  margin: 0 auto;
   text-align: center;
 }
 
