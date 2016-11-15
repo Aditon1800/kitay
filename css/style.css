@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", sans-serif !important;
   color: #2c2c2c;
   background-color: #fff;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 ul, li {
@@ -71,6 +71,11 @@ a {
 .btn-sl {
   font-size: 16px;
   padding: 8px 35px;
+}
+
+.btn-l {
+  width: 453px;
+  padding: 14px 50px;
 }
 
 .btn-custom:hover {
@@ -162,11 +167,11 @@ a {
 .ph-number {
   text-align: center;
   position: absolute;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 24px;
   color: #232323;
   top: 5px;
-  left: 77%;
+  left: 76.5%;
   z-index: 15;
 }
 
@@ -176,7 +181,7 @@ a {
 }
 
 .ph-number  b {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
  
@@ -382,13 +387,13 @@ a {
 }
 
 .why-us-title .icon-title_plus {
-  background: url('../img/plus.png') center;
-  background-size: 26px 26px;
+  background: url('../img/mob-plus.png') center;
+  background-size: 27px 27px;
 }
 
 .why-us-title .icon-title_minus {
-  background: url('../img/minus.png') center;
-  background-size: 26px 26px;
+  background: url('../img/mob-minus.png') center;
+  background-size: 27px 27px;
 }
 
 .why-us-item {
@@ -519,12 +524,13 @@ a {
 }
 
 #popup-window .col-md-4 {
-  background-color: lightgray;
+  background-color: whitesmoke;
+  border-radius: 17px;
   background-clip: content-box;
 }
 
 #popup-window .col-md-4 .popup-title {
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 #popup-window .title {
@@ -557,8 +563,8 @@ a {
 
 .popup-item {
   color: #2c2c2c;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 22px;
   padding-left: 15px;
 }
 
@@ -873,7 +879,7 @@ a {
 .benefit-title2,
 .benefit-title3 {
   float: left;
-  width: 45%;
+  width: 40%;
   font-size: 24px;
   font-weight: 600;
   line-height: 48px;
@@ -891,11 +897,15 @@ a {
 
 .benefit-items {
   float: left;
-  width: 50%;
+  width: 60%;
   font-size: 16px;
   font-weight: 400;
   line-height: 44px;
   color: #2c2c2c;
+}
+
+.benefit-block:nth-of-type(4) .benefit-items {
+  padding-top: 50px;
 }
 
 .benefit-item {
@@ -1177,8 +1187,13 @@ a {
 
 /*CONDITIONS*/
 
+.cont-desc-title_mob {
+  display: none;
+}
+
 #conditions {
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 #conditions .sec-title {
@@ -1354,7 +1369,8 @@ a {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -1417,10 +1433,10 @@ a {
 
 .person .person-fb {
   height: 168px;
-  overflow-y: scroll; 
-  font-size: 16px;
+  overflow-y: auto; 
+  font-size: 17px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 24px;
 }
 
 .frame-video {
@@ -1465,7 +1481,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
 }
 
 #enrollment .desc {
@@ -1496,8 +1511,7 @@ a {
   width: 40%;
   height: 100%;
   top: 100px;
-  left: -60px;
-  z-index: 10;
+  left: -115px;
   opacity: .2;
 }
 
@@ -1510,7 +1524,6 @@ a {
   height: 100%;
   top: 40%;
   right: 0;
-  z-index: 10;
   opacity: .2;
 }
 
@@ -1519,7 +1532,7 @@ a {
 }
 
 .faq-list {
-  width: 56vw;
+  width: 70vw;
   padding: 0;
   margin: 0 auto;
   list-style-type: none;
@@ -1535,9 +1548,9 @@ a {
 .faq-list__question {
   position: relative;
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  padding: 0.4em 3em 0.4em 0.8em;
+  padding: 0.4em 2em 0.4em 1.8em;
   text-decoration: none;
   color: #2c2c2c;
   background-color: whitesmoke;
@@ -1697,7 +1710,7 @@ input[type="phone"],
   margin-bottom: 5px;
 }
 
-.phone:before {
+#footer .phone:before {
   content: '';
   display: block;
   background: url('../img/phone-icon.png') 0 0 no-repeat;
@@ -1767,8 +1780,8 @@ input[type="phone"],
 }
 
 .mob-title{
-  padding-top: 45px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 35px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1777,9 +1790,9 @@ input[type="phone"],
 }
 
 .m-social {
-  width: 204px;
-  margin: 30px auto 0;
-  padding-bottom: 50px;
+  width: 208px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .m-social:after {
@@ -1850,8 +1863,8 @@ input[type="phone"],
 }
 
 .modal-zoom_content img {
-  max-width: inherit;
-  max-height: none;
+  width: 60%;
+  max-height: auto;
   border-radius: 3px;
   border: 4px solid white;
 }

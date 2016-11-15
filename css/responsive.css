@@ -1,16 +1,16 @@
 @media screen and (max-width: 1199px) {
   .header-content {
-    padding-left: 5%;
+    padding-left: 3%;
   }
 
   .header-title {
-    font-size: 32px;
+    font-size: 28px;
     padding: 1em 0 .5em;
-    line-height: 36px;
+    line-height: 32px;
   }
 
   .header-items {
-    padding: 3em 0 4em;
+    padding: 2em 0 4em;
   }
 
   .header-item {
@@ -20,7 +20,7 @@
 
   .ph-number {
     font-size: 20px;
-    left: 78.5%;
+    left: 77.5%;
   }
 
   .cond-block {
@@ -43,6 +43,7 @@
   .ph-number {
     font-size: 17px;
     line-height: 16px;
+    left: 80%;
   }
 
   .header-title {
@@ -62,6 +63,7 @@
 
   .header-content {
     padding-left: 2%;
+    width: 100%;
   }
 
   .header-slider {
@@ -69,7 +71,7 @@
   }
 
   #header {
-    background: url('../img/mobile-bg.jpg') no-repeat right top;
+    background: url('../img/middle-bg.jpg') no-repeat right top;
     background-size: cover;
   }
 
@@ -214,6 +216,10 @@
     padding: 15px 30px !important;
   }
 
+  #why-us {
+    padding: 35px 0;
+  }
+
   .why-us-block1,
   .why-us-block2,
   .why-us-block3,
@@ -237,11 +243,7 @@
   #why-us .why-us-list {
     display: none;
     padding-bottom: 10px;
-  }
-
-  #why-us .why-us-list .why-us-item {
-    font-size: 13px;
-    list-style-type: none;
+    padding: 0 15% 10px;
   }
 
   .why-us-title {
@@ -249,8 +251,14 @@
     font-size: 20px;
   }
 
+  .why-us-item {
+    font-size: 13px;
+    list-style-type: none;
+    text-align: left;
+  }
+
   .why-us-title .icon-title {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
   }
@@ -279,18 +287,18 @@
       margin-bottom: 25px;
   }
 
+#universities .title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
  .slide-university {
   margin-bottom: 50px;
  }
 
-  .slide-university .inner-wrap-desc {
-    /*padding: 10px;*/
-  }
-
   .slide-university .text{
     font-size: 12px;
     line-height: 14px;
-    /*padding-right: 15px;*/
   }
 
   .prev-btn {
@@ -325,35 +333,6 @@
   }
 }
 
-@media screen and (max-width: 550px) {
-
-  .ph-number {
-    padding-right: 10%;
-  }
-
-  .btn-sl {
-    font-size: 12px !important;
-    line-height: 12px !important;
-    padding: 9px 12px !important;
-  }
-
-  .slide-university .text{
-    font-size: 12px;
-    line-height: 14px;
-    padding-right: 15px;
-  }
-
-  .enrollment-wrap {
-    display: block;
-    text-align: center;
-  }
-
-  #enrollment .desc span {
-    padding-bottom: 30px;
-  }
-
-}
-
 @media (min-width: 768px) {
   #why-us .why-us-list {
     display: block !important;
@@ -365,11 +344,19 @@
 }
 
 @media screen and (max-width: 550px) {
+  .sec-title {
+    padding-bottom: 20px;
+  }
 
   .btn-sl {
     font-size: 12px !important;
     line-height: 12px !important;
     padding: 9px 12px !important;
+  }
+
+  #header {
+    background: url('../img/mobile-bg.jpg') no-repeat right top;
+    background-size: cover;
   }
 
   #header .header-content {
@@ -410,6 +397,24 @@
     line-height: 13px;
   }
 
+  .logo {
+    width: 77px;
+    height: 32px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .ph-number {
+    font-size: 14px;
+    padding-left: 15%;
+  }
+
+  .ph-number span {
+    font-size: 10px;
+  }
+
   .why-us-block1,
   .why-us-block2,
   .why-us-block3,
@@ -422,7 +427,26 @@
 
   .why-us-title {
     padding-top: 45px;
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .slide-university {
+    padding: 20px 0 20px;
+  }
+
+  .slide-university .inner-wrap-desc {
+    display: block;
+    text-align: center;
+  }
+
+  .inner-wrap-desc .text:first-child {
+    display: none;
+  }
+
+  .inner-wrap-desc .text {
+    width: 100%;
+    padding-right: 0;
+    text-align: left;
   }
 
   #enrollment .desc {
@@ -436,14 +460,78 @@
     padding-bottom: 30px;
   }
 
-  .slide-university .inner-wrap-desc {
+  .btn-sl {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 9px 12px !important;
+  }
+
+  .btn-l {
+    width: 240px;
+    height: 40px;
+    font-size: 11px;
+    padding: 0 !important;
+  }
+
+  #universities {
+    padding: 20px 0 10px;
+  }
+
+  .slide-university {
+    margin-bottom: 0;
+  }
+
+  .slide-university .text{
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 15px;
+  }
+
+  #conditions {
+    padding-top: 35px;
+  }
+
+  #condition .sec-title {
+    padding-bottom: 20px;
+  }
+
+  .cont-desc-title {
+    display: none;
+  }
+
+  .cont-desc-title_mob {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2c2c2c;
+    text-align: center;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  #enrollment {
+    padding: 40px 0;
+  }
+
+  .enrollment-wrap {
     display: block;
     text-align: center;
   }
 
-  .inner-wrap-desc .text {
-    width: 100%;
-    padding-right: 0;
+  #enrollment .desc {
+    font-size: 14px;
+  }
+
+  #enrollment .desc span {
+    padding: 10px 35px 0;
+    line-height: 20px;
+  }
+
+  #enrollment .btn-custom {
+    width: 240px;
+    font-size: 12px;
   }
 }
 
