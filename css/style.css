@@ -404,7 +404,6 @@ a {
 .why-us-item {
   font-size: 18px;
   line-height: 26px;
-  list-style-type: disc;
   margin-left: 20px;
 }
 
@@ -1227,6 +1226,8 @@ a {
 /* OTHER STYLE SEC */
 
 .scheme-bottom-info {
+  max-width: 830px;
+  margin: 0 auto;
   text-align: center;
 }
 
