@@ -108,36 +108,13 @@ jQuery(document).ready(function() {
     }
   }
 
-
-
   // Popup menu
   if ($('#btn-uni-desc') && ($('#popup-btn'))) {
-    var $modalBtn = $('#popup-btn');
     var $modalForm = $('.modal-form');
     var $modalFormFirst= $('.modal-form-first');
     var $overlay = $('#overlay');
-    var $descBtn = $('#btn-uni-desc');
-    var $popup= $('#popup-window');
-
-
-    $descBtn.on('click', function() {
-      $popup.css({
-        opacity: 1,
-        zIndex: 1100
-      });
-      $overlay.fadeIn('fast');
-    })
-
-    $modalBtn.on('click', function() {
-      $modalFormFirst.fadeIn();
-      $overlay.fadeIn('fast');
-    })
 
     $overlay.on('click', function() {
-      $popup.css({
-        opacity: 0,
-        zIndex: -1
-      });
       $modalForm.fadeOut();
       $(this).fadeOut('fast');
     })
@@ -169,7 +146,6 @@ jQuery(document).ready(function() {
 
 
     // zoom img slick
-
     (function() {
 
       $('.slider').each(function() {
@@ -194,15 +170,12 @@ jQuery(document).ready(function() {
 
     }());
 
-    // call popup
+    // call/close form
     (function() {
 
       var btnCall = $('button[data-button="call-popup"]');
-      
       var $modalFormFirst = $('.modal-form-first');
-
       var $overlay = $('#overlay');
-
       var btnCloseModalForm = $('.modal-form__btn-close');
 
       btnCall.each(function() {
@@ -228,10 +201,42 @@ jQuery(document).ready(function() {
     }());
 
 
-    // // close modal form
-    // (function() {
+    //call .popup-window
+    (function() {
 
-      
-    // }());
+      var popupAll = $('.popup-window'),
+          btnCallPreview = $('button[data-call="preview"]'),
+          $overlay = $('#overlay'),
+          btnClosePopupAll = $('.popup-window .btn-close');
 
+      btnCallPreview.each(function() {
+
+        $(this).on('click', function() {
+
+          var indexBtn = $(this).data('index');
+
+          popupAll.eq(indexBtn).css({
+            opacity: 1,
+            zIndex: 1100
+          });
+          $overlay.show();
+        });
+
+          $overlay.on('click', function() {
+            popupAll.css({
+              opacity: 0,
+              zIndex: -1
+            });
+            $(this).hide();
+        });
+
+          btnClosePopupAll.on('click', function() {
+            popupAll.css({
+              opacity: 0,
+              zIndex: -1
+            });
+            $overlay.hide();
+        });
+      });
+    }());
 });

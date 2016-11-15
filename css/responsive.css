@@ -240,7 +240,7 @@
   .why-us-block2,
   .why-us-block3,
   .why-us-block4 {
-    /*min-height: auto;*/
+    height: auto;
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 10px;
@@ -350,6 +350,13 @@
 }
 
 @media (min-width: 768px) {
+  .why-us-block1,
+  .why-us-block2,
+  .why-us-block3,
+  .why-us-block4 {
+    min-height: 296px;
+  }
+
   #why-us .why-us-list {
     display: block !important;
   }
@@ -559,24 +566,30 @@
     width: 240px;
     font-size: 12px;
   }
-
+  
+  .popup-window, 
   #popup-window {
     /*display: none;*/
     background-color: whitesmoke;
   }
 
+  .popup-window .btn-close,
   #popup-window .btn-close {
     display: block!important;
   }
-
+  
+  .popup-window .title,
   #popup-window .title {
     display: none;
   }
 
+  .popup-window .container .row:first-child,
   #popup-window .container .row:first-child {
     padding-bottom: 0;
   }
 
+  .popup-window .col-md-8,
+  .popup-window .col-md-4,
   #popup-window .col-md-8,
   #popup-window .col-md-4 {
     padding: 0 25px 20px;
