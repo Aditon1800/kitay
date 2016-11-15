@@ -611,6 +611,10 @@
     padding-left: 0;
   }
 
+  #popup-window .btn-custom {
+      margin: 20px auto 40px ;
+  }
+
   #popup-btn {
     margin: 20px auto 40px ;
   }
