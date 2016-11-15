@@ -184,11 +184,6 @@ jQuery(document).ready(function() {
               $('#modal-zoom').find('img').attr('src', srcImg);
             }
           });
-
-          //var srcImgActive = imgActive.attr('src');
-
-          //$('#modal-zoom').show();
-          //$('#modal-zoom').find('img').attr('src', imgActive);
         })
 
         $('#modal-zoom').on('click', function() {
@@ -197,7 +192,46 @@ jQuery(document).ready(function() {
         })
       })
 
+    }());
+
+    // call popup
+    (function() {
+
+      var btnCall = $('button[data-button="call-popup"]');
+      
+      var $modalFormFirst = $('.modal-form-first');
+
+      var $overlay = $('#overlay');
+
+      var btnCloseModalForm = $('.modal-form__btn-close');
+
+      btnCall.each(function() {
+
+        $(this).on('click', function() {
+          $modalFormFirst.show();
+          $overlay.show();
+        });
+
+        $overlay.on('click', function() {
+          $(this).hide(); 
+          $modalFormFirst.hide();
+        });
+
+        btnCloseModalForm.each(function() {
+          $(this).on('click', function() {
+            $(this).parent('.modal-form').hide();
+            $overlay.hide();
+          });
+        });
+      });
 
     }());
-});
 
+
+    // // close modal form
+    // (function() {
+
+      
+    // }());
+
+});
