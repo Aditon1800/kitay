@@ -476,6 +476,7 @@ a {
 .slide-university .inner-wrap-desc {
   padding: 35px;
   padding-bottom: 0;
+  text-align: center;
 }
 
 .slide-university .inner-wrap-desc:after {
@@ -495,10 +496,11 @@ a {
   line-height: 30px;
   font-weight: 400;
   color: #2c2c2c;
+  text-align: left;
 }
 
 .slide-university .btn {
-  float: right;
+  margin-left: 5%;
 }
 
 .btn-sl-uni {
@@ -585,6 +587,7 @@ a {
 
 .popup-button {
   text-align: center;
+  padding: 40px 0 50px;
 }
 
 .first-block {
