@@ -1,15 +1,19 @@
 @font-face {
  font-family: 'Open Sans';
- src: url('../fonts/OpenSans-Regular_0.tt');
-src: local(''),
- url('../fonts/OpenSans-Regular_0.tt') format('truetype');
+ src: url('../fonts/OpenSans-Regular_0.ttf');
+  font-style: normal;
+  font-weight: 400;
+src: local('Open Sans'),
+ url('../fonts/OpenSans-Regular_0.ttf') format('truetype');
 }
 
 @font-face {
  font-family: 'Open Sans';
  src: url('../fonts/OpenSans-Semibold_0.ttf');
-src: local(''),
- url('../fonts/OpenSans-Semibold_0.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+src: local('Open Sans Semibold'), 
+url('../fonts/OpenSans-Semibold_0.ttf') format('truetype');
 }
 
 body {
@@ -18,6 +22,17 @@ body {
   background-color: #fff;
   overflow-x: hidden!important;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Open Sans", sans-serif !important;
+}
+
 
 ul, li {
   margin: 0;
@@ -44,6 +59,10 @@ a {
 .btn:focus, .btn:active:focus {
   outline: none;
   color: #fff;
+}
+
+input {
+  background-color: #fff;
 }
 
 /*CUSTOM*/
@@ -171,7 +190,7 @@ a {
   line-height: 24px;
   color: #232323;
   top: 5px;
-  left: 76.5%;
+  left: 77.5%;
   z-index: 15;
 }
 
@@ -332,8 +351,8 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-bottom: 20px;
-  width: 80%;
-  // min-height: 296px;
+  width: 85%;
+  /*min-height: 317px;*/
 }
 
 .why-us-block1:after,
@@ -376,6 +395,8 @@ a {
   line-height: 1.5;
   color: #2c2c2c;
   padding-top: 100px;
+  padding-bottom: 10px;
+  margin-left: 25px;
   cursor: pointer;
 }
 
@@ -404,7 +425,8 @@ a {
 .why-us-item {
   font-size: 18px;
   line-height: 26px;
-  margin-left: 20px;
+  margin-left: 25px;
+  padding: 6px 0;
 }
 
 /* IN WHICH UNIVERSITIES */
@@ -420,6 +442,12 @@ a {
 
 .slider-university {
   position: relative;
+}
+
+.slider-university-desc {
+  background-color: #fff;
+  height: 1050px !important;
+  overflow-y: hidden;
 }
 
 .slider-university-nav {
@@ -444,7 +472,7 @@ a {
   width: 116px;
   height: 123px;
   background: url('../img/pt-icons/slide-select.png') no-repeat center;
-  z-index: -1;
+  z-index: 10;
 }
 
 .slick-slide:focus {
@@ -509,6 +537,7 @@ a {
 
 .uni-wrap-bottom {
   text-align: center;
+  padding-top: 80px;
 }
 
 
@@ -570,6 +599,7 @@ a {
 .popup-window .col-md-4 .popup-title,
 #popup-window .col-md-4 .popup-title {
   padding-left: 35px;
+  padding-bottom: 0;
 }
 
 .popup-window .title,
@@ -579,6 +609,7 @@ a {
   font-weight: 600;
   line-height: 30px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 #popup-window .btn-custom {
@@ -597,23 +628,25 @@ a {
 .popup-title {
   color: #2c2c2c;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 30px;
+  padding-bottom: 10px;
 }
 
 .popup-desc {
   color: #2c2c2c;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
+.popup-window ul,
 #popup-window ul {
-  padding: 5px 20px;
+  padding: 5px 20px 19px;
 }
 
 .popup-item {
   color: #2c2c2c;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
   padding-left: 15px;
 }
 
@@ -624,9 +657,11 @@ a {
 
 .modal-form {
   position: fixed;
+  overflow-y: auto;
   top: 0;
   right: 10%;
   left: 10%;
+  bottom: 0;
   display: none;
   min-height: 520px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -721,6 +756,7 @@ a {
   padding: 8px;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .modal-form .textarea {
@@ -815,7 +851,7 @@ a {
 }
 
 .modal-form .select-drop {
-  display: block;
+  display: none;
   margin-top: -3px;
   padding-top: 20px;
   background: #eee;
@@ -938,6 +974,7 @@ a {
   background-color: #fff;
   margin: 30px auto 0;
   padding: 8px;
+  text-align: center;
 }
 
 .benefit-block:after {
@@ -955,7 +992,6 @@ a {
   font-weight: 600;
   line-height: 48px;
   color: #2c2c2c;
-  padding-left: 40px;
   padding-top: 28px;
   padding-bottom: 120px;
 }
@@ -973,6 +1009,7 @@ a {
   font-weight: 400;
   line-height: 44px;
   color: #2c2c2c;
+  text-align: left;
 }
 
 .benefit-block:nth-of-type(4) .benefit-items {
@@ -985,15 +1022,15 @@ a {
 }
 
 .benefit-icon1 {
-  background: url('../img/icons/b-icon1.png') 80px 90px no-repeat;
+  background: url('../img/icons/b-icon1.png') center 90px no-repeat;
 }
 
 .benefit-icon2 {
-  background: url('../img/icons/b-icon2.png') 80px 40px no-repeat;
+  background: url('../img/icons/b-icon2.png') center 50px no-repeat;
 }
 
 .benefit-icon3 {
-  background: url('../img/icons/b-icon3.png') 80px 45px no-repeat;
+  background: url('../img/icons/b-icon3.png') center 50px no-repeat;
 }
 
 
@@ -1034,6 +1071,7 @@ a {
 
 .tabs-scheme {
   padding-top: 50px;
+  text-align: center;
 }
 
 .tabs-scheme::after {
@@ -1043,11 +1081,12 @@ a {
 }
 
 .tabs-scheme .tab-item {
-  float: left;
-  width: 28.83%;
-  margin: 0 2.25%;
+  /*float: left;*/
+  display: inline-block;
+  width: 23.83%;
+  margin: 0 4.5%;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 27px;
   color: #2c2c2c;
   text-align: center;
   border: 2px solid #eead59;
@@ -1062,7 +1101,7 @@ a {
 }
 
 .tabs-scheme .tab-item a {
-  padding: 20px 15px;
+  padding: 10px 15px;
   color: inherit;
 }
 
@@ -1159,7 +1198,7 @@ a {
   content: '';
   position: absolute;
   top: -60px;
-  left: 83%;
+  left: 64%;
   width: 4px;
   height: 70px;
   margin-left: -2px;
